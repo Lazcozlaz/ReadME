@@ -7,21 +7,18 @@ import org.junit.jupiter.api.Test;
 class InfoEstudianteTest {
 
 	@Test
-	public void promedio0() {
-		System.out.println("Promedio con 0... en español");
-		Asignatura español = new Asignatura(0.0, 0.0);
-		InfoEstudiante.promediarEs();
-		assertTrue(InfoEstudiante.promediarEs() == 0.0);
+	public void promedioEs() {
+		System.out.println("Promedio en español");
+		assertTrue(InfoEstudiante.promediarEs() == 3);
 		
 	}
 	
 	@Test
-	public void promedio10y0() {
-		System.out.println("Promedio con 0 y 10... en español");
+	public void promedioIn() {
+		System.out.println("Promedio con en ingles");
 		
-		Asignatura español = new Asignatura(10.0, 0.0);
-		InfoEstudiante.promediarEs();
-		assertTrue(InfoEstudiante.promediarEs() == 5.0);
+		
+		assertTrue(InfoEstudiante.promediarIn() == 3.95);
 		
 	}
 	
